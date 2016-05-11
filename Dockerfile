@@ -14,7 +14,8 @@ RUN echo "Downloading torque rpms..." && \
 COPY ./config/config /var/spool/torque/mom_priv/
 COPY entrypoint.sh /
 
-EXPOSE [15002, 15003]
+EXPOSE 15002
+EXPOSE 15003
 
 ENTRYPOINT ["/entrypoint.sh"]
     
